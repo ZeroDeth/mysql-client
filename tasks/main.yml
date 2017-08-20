@@ -1,0 +1,8 @@
+---
+# tasks file for mysql-client
+- name: Install MySQL packages
+  apt: pkg={{item}} state=installed
+  with_items:
+     - mysql-client-core-5.7
+    #  - libmysqlclient-dev
+    #  - mysql-client
